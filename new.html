@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Individual Profile Detail Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://rollingnexus.com/css/employer/plugin.css">
+<link rel="stylesheet" type="text/css" href="https://rollingnexus.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://rollingnexus.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://rollingnexus.com/css/responsive.css">
+<link rel="stylesheet" href="https://rollingnexus.com/css/employer/accordion.css">
+<link rel="stylesheet" href="https://rollingnexus.com/css/styles.css">
+<link rel="stylesheet" href="https://rollingnexus.com/css/purna.css">
+<link rel="stylesheet" href="https://rollingnexus.com/assets/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="https://rollingnexus.com/assets/dist/css/jquery-ui.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" id="style" type="text/css" href="https://rollingnexus.com/assets/snake/css/main-snake.css" />
+<script src="https://rollingnexus.com/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script>
+
+function getTheme () {
+    function changeTheme (Theme) {
+        document.getElementById('style').setAttribute('href', Theme);
+    }
+    var index = document.getElementById("select").selectedIndex;
+    switch (index) {
+        case 0: 
+          changeTheme('https://rollingnexus.com/assets/snake/css/light-snake.css?' + Math.random());
+          break;
+        case 1: 
+          changeTheme('https://rollingnexus.com/assets/snake/css/main-snake.css?' + Math.random());
+          break;
+        case 2: 
+          changeTheme('https://rollingnexus.com/assets/snake/css/dark-snake.css?' + Math.random());
+          break;
+        case 3: 
+          changeTheme('https://rollingnexus.com/assets/snake/css/green-snake.css?' + Math.random());
+          break;
+        case 4: 
+          changeTheme('https://rollingnexus.com/assets/snake/css/matrix-snake.css?' + Math.random());
+          break;
+        default:
+          changeTheme('https://rollingnexus.com/assets/snake/css/main-snake.css?' + Math.random());
+          break;
+    }
+    setTimeout(function() {
+        document.getElementById('game-area').focus();
+    }, 10);
+}
+
+
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="dashboardbg">
+
+<header class="dash_header"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="container">
+<div class="row cm-row">
+<div class="col-md-2 col-3">
+<div class="mainlogo"><a href="https://rollingnexus.com"><img src="https://rollingnexus.com/image/catalog/logo/Nexus_Lanscape.png"></a></div>
+</div>
+<div class="col-lg-7 col-md-8 col-7 hidden-xs">
+<nav class="navbar navbar-expand-md mainmenu stick-top">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse mainNav inner_nav" id="navbarNav">
+<ul class="navbar-nav nav-pills">
+<li class="nav-item">
+<a class="nav-link" href="https://rollingnexus.com">Home</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/jobs">Job</a></li>
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/tender">Tender</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/freelance">Freelance</a></li>
+<li class="dropdown nav-item">
+<a class="nav-link" href="#">कर्मशील</a>
+<ul class="dropdown-content">
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/international-jobs">कर्मशील विदेश</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/skilled-jobs">कर्मशील स्वदेश</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://rollingnexus.com/CAT">CAT</a>
+</li>
+<li class="dropdown nav-item">
+<a class="nav-link" href="#">Event</a>
+<ul class="dropdown-content">
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/event">Event</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/counselling">Counselling</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/classroom">Class Room</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/enroll/Virtual-Exhibition">Virtual Exhibition</a></li>
+</ul>
+</li>
+<li class="dropdown nav-item">
+<a class="nav-link" href="#">Others</a>
+<ul class="dropdown-content">
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/contest">Contest</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/sports">Sports prediction</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/quiz-competition">Quiz</a> </li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/refer_a_friend">Refer and Earn</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://rollingnexus.com/blogs">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/women">Rolling Women</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/able">Rolling Able</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/retired">Rolling Yet to Retire</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/forum">Rolling छलफल</a></li>
+<li class="nav-item"><a class="nav-link" href="https://rollingnexus.com/web/Useful-Resources">Usefull Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="col-lg-3 col-md-2 col-9">
+<div class="float-right loginbtns tp14p">
+<a href="https://rollingnexus.com/employee/dashboard" title="Dashboard"><span class="user-image" style="margin-top: -10px;"><img src="https://lh3.googleusercontent.com/a/ACg8ocK1b0Id14o-MAAnBRIXeuDT7fMCEmlCLPLXsrRumdWN=s96-c"></span><span> <strong>Roshan Prasad Phuyal</strong></span></a>
+<a class="btn ipadloginbtns" href="https://rollingnexus.com/employee/logout" title="Logout"><i class="fa fa-power-off"></i><span class="hidden-md hidden-xs"> Logout</span></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="dashboard">
+<div class="container">
+
+<div class="right_pannel_dashboard">
+<div class="form_bg">
+
+<div class="profile_menu">
+<ul>
+<li>
+<a class="nav-link" href="https://rollingnexus.com/employee" title="Home">Home <i class="fa fa-home"></i></a>
+</li>
+<li><a class="nav-link" href="#" title="My Circle">My Cirle <i class="fa fa-users"></i></a></li>
+<li><a class="nav-link" href="#" title="Message">Messages <i class="fa fa-envelope"></i></a></li>
+<li><a class="nav-link" href="#" title="Notification">Notification <i class="fa fa-bell redclr"></i></a></li>
+<li><a class="nav-link" href="https://rollingnexus.com/employee/setting" title="Setting">Setting <i class="fas fa-user-cog"></i></a></li>
+</ul>
+</div>
+
+<div class="all10p">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-12">
+
+
+
+<div class="right_profile tp15m" id="experience_box">
+<h2 class="profile_righthd border_bottom">
+<span class="greenclr">Snake Game</span>
+</h2>
+<div id="snake_board_box" class="education tb10p border_bottom">
+<form class="form-horizontal dash_forms hidden" role="form" id="update_score" method="POST" action="https://rollingnexus.com/employee/games/update_score">
+<input type="hidden" name="_token" value="nJ3ZtKeYQhhT59Tenl4XQdkKGVkFysV3RUJEGFUE">
+<input type="hidden" name="high_score" id="high_score" value="0">
+<input type="hidden" name="total_attempts" id="total_attempts" value="0">
+<input type="hidden" name="game_title" id="game_title" value="snake">
+<input type="hidden" name="overal_high_score" id="overal_high_score" value="131.00">
+<input type="hidden" name="rank" id="rank" value="1">
+<input type="hidden" name="total_participant" id="total_participant" value="194">
+</form>
+<div class="snake-toolbar">
+<div style="display:inline-block;margin-right:10px;">
+<span>Theme:</span>
+<select onchange="getTheme()" id="select">
+<option>Light Theme</option>
+<option selected>Main Theme</option>
+<option>Dark Theme</option>
+<option>Green Theme</option>
+<option>Matrix Theme</option>
+</select>
+</div>
+<div style="display:inline-block;margin-right:10px;">
+<span>Mode:</span>
+<select id="selectMode">
+<option value="100">Easy</option>
+<option value="75" selected>Medium</option>
+<option value="50">Hard</option>
+</select>
+</div>
+<button onclick="go_full_screen()">Full Screen</button><br/>
+</div>
+<div id="game-area" tabindex="0"></div>
+</div>
+
+</div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-12">
+<div class="right_profile games">
+<h2 class="profile_righthd border_bottom">
+<span class="greenclr">Games</span>
+</h2>
+<div class="row">
+<a href="https://rollingnexus.com/employee/games/snake" class="game_icon">
+<img src="https://rollingnexus.com/assets/snake/snake.png">
+</a>
+<a href="https://rollingnexus.com/employee/games/snake" class="game_icon">
+<img src="https://rollingnexus.com/assets/snake/snake.png">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+<script src="https://rollingnexus.com/js/employer/popper.js" type="text/javascript"></script>
+<script src="https://rollingnexus.com/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://rollingnexus.com/assets/snake/js/snake.js"></script>
+<script type="text/javascript">
+        var mySnakeBoard = new SNAKE.Board(  {
+            boardContainer: "game-area",
+            fullScreen: true,
+           
+        });  
+    </script>
+<script type="text/javascript">
+      function go_full_screen(){
+        var elem = document.documentElement;
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+          elem.webkitRequestFullscreen();
+        }
+      }
+      
+      
+  </script>
+<script type="text/javascript">
+    
+  </script>
+</html>2
